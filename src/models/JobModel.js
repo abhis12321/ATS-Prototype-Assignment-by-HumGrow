@@ -7,7 +7,7 @@ const jobSchema = new mongoose.Schema({
         type:String,
         required:[true , "Oops! Job title is missing"],
     },
-    description: {
+    description:{
         type:String,
         required:[true , "oops! Job Description is missing"],
     },
@@ -15,7 +15,8 @@ const jobSchema = new mongoose.Schema({
         type:String,
     },
     stipend:{
-        type:Number,
+        type:String,
+        default:"Not-Disclosed"
     },
     jobType:{
         type:String,
